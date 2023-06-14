@@ -94,7 +94,6 @@ li a
 .find
 {
     position: relative;
-    opacity: 0.3;
     background-color: var(--Midnight-Green);
     height: 700px;
     display: flex;
@@ -156,3 +155,81 @@ li a
     bottom: 0;
     transform: translate(-46%);
 }
+
+.build
+{
+    position: relative;
+    background-color: var(--Sacramento-State);
+}
+.bg_img_03
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%);
+}
+
+.build .container
+{
+    display: flex;
+    padding-top: 140px;
+    padding-bottom: 110px;
+}
+.build .container .left
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--white);
+    padding-right: 110px;
+}
+
+.build_border_top
+{
+    width: 50px;
+    height: 4px;
+    background-color: var(--Light-Coral);
+    margin-bottom: 55px;
+}
+
+.build .container .right
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    padding-left: 15px;
+    padding-top: 59px;
+
+}
+
+.build_item
+{
+    flex: 1;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.build_item--icon img
+{
+    width: 72px;
+    height: 72px;
+}
+.build_item--description
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+}
+
+.build_item--description span
+{
+    margin-bottom: 17px;
+}
+
+.build_item--description p
+{
+    opacity: 0.8;
+}
+
