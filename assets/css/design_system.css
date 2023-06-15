@@ -6,6 +6,11 @@
     --Light-Coral: #F67E7E;
     --Rapture-Blue:  #79C8C7;
     --Sacramento-State-Green: #012F34;
+    --Deep-Jungle-Green: #004047;
+}
+.white
+{
+    color: var(--white);
 }
 .Light-Coral
 {
@@ -53,7 +58,7 @@
     line-height: 25px;
 }
 
-.primary_btn
+.primary_btn_light
 {
     border: 2px solid #fff;
     border-radius: 24px;
@@ -63,3 +68,15 @@
     place-items: center;
     color: var(--white);
 }
+
+.primary_btn_dark
+{
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    padding: 0px 30px 0px 30px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    color: var(--Sacramento-State-Green);
+}
+

@@ -233,3 +233,123 @@ li a
     opacity: 0.8;
 }
 
+.delivering
+{
+    background-color: var(--Deep-Jungle-Green);
+    position: relative;
+    padding-bottom: 149px;
+}
+
+.bg_img_05
+{
+    position: absolute;
+}
+
+.bg_img_06
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.delivering .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.delivering--title
+{
+    color: var(--white);
+    text-align: center;
+    width: 932px;
+}
+
+.delivering--title span
+{
+    color: var(--Rapture-Blue);
+}
+
+.depoiments-container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 93px;
+}
+
+.depoiment-card
+{
+    position: relative;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg_img_04
+{
+    position: absolute;
+    top: -37px;
+}
+.depoiment
+{
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+.dep--name
+{
+    text-align: center;
+    color: var(--Rapture-Blue);
+    font-weight: 700 !important;
+}
+
+.dep--position
+{
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--white);
+    margin-bottom: 31px;
+}
+
+.dep-img
+{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: 2px solid #C4FFFE;
+}
+
+.contact_us
+{
+    opacity: 0.3;
+    background-color: var(--Light-Coral);
+    position: relative;
+}
+
+.bg_img_07
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.contact_us .container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 96px 75px 98px;
+}
+
+.contact_us .title
+{
+    color: var(--Sacramento-State-Green);
+}
