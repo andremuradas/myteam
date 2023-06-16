@@ -160,7 +160,7 @@ li a
 .build
 {
     position: relative;
-    background-color: var(--Sacramento-State);
+    background-color: var(--Sacramento-State-Green);
 }
 .bg_img_03
 {
@@ -353,9 +353,10 @@ li a
 {
     color: var(--Sacramento-State-Green);
 }
+
 footer
 {
-    opacity: 0.3;
+    background-color: var(--Dark-Green);
 }
 
 footer .container
@@ -376,6 +377,7 @@ footer .container .left
 .footer_menu
 {
     display: flex;
+    margin-bottom: 5px;
 }
 
 .menu_footer
