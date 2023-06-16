@@ -29,7 +29,8 @@ header
     z-index: 2;
 }
 
-section
+section,
+footer
 {
     max-width: 1440px;
     margin: auto;
@@ -331,7 +332,6 @@ li a
 
 .contact_us
 {
-    opacity: 0.3;
     background-color: var(--Light-Coral);
     position: relative;
 }
@@ -352,4 +352,55 @@ li a
 .contact_us .title
 {
     color: var(--Sacramento-State-Green);
+}
+footer
+{
+    opacity: 0.3;
+}
+
+footer .container
+{
+    display: flex;
+    margin-top: 47px;
+    margin-bottom: 49px;
+}
+
+footer .container .left
+{
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_menu
+{
+    display: flex;
+}
+
+.menu_footer
+{
+    color: var(--white);
+    margin-right: 41px;
+}
+
+footer .container .center
+{
+    color: var(--white);
+    opacity: 0.6;
+}
+
+footer .container .right
+{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--white);
+}
+
+footer .container .right a 
+{
+    margin-left: 12px;
 }
