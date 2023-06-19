@@ -1,0 +1,228 @@
+body {
+  background-image: url(../../About\ -\ Desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2352px;
+}
+
+.about {
+  background-color: var(--Midnight-Green);
+  padding-top: 241px;
+  padding-bottom: 119px;
+  position: relative;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .container .left {
+  width: 380px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: var(--white);
+}
+
+.about .container .right {
+  flex: 1;
+  color: var(--white);
+}
+
+.about_border_top {
+  width: 50px;
+  height: 4px;
+  background-color: var(--Light-Coral);
+  margin-bottom: 41px;
+}
+
+.bg_img_about_01 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%);
+}
+
+.directors {
+  position: relative;
+  opacity: 0.3;
+  background-color: var(--Deep-Jungle-Green);
+  padding-top: 140px;
+  padding-bottom: 94px;
+}
+
+.container .title 
+{
+  color: var(--white);
+  text-align: center;
+}
+
+.directors .cards_container
+{
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.directors .cards_container .card
+{
+  position: relative;
+  min-width: 350px;
+  min-height: 253px;
+  background-color: var(--Sacramento-State-Green);
+  margin-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.directors .cards_container .card> img
+{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #C4FFFE;
+  border-radius: 50%;
+}
+
+.card_name
+{
+  color: var(--Rapture-Blue);
+  margin-top: 15px;
+}
+
+.card_position
+{
+  color: var(--white);
+  margin-top: -1px;
+  font-style: italic;
+}
+
+
+.card .card_hover
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 350px;
+  min-height: 253px;
+
+}
+
+.card_dep
+{
+  display: none;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 350px;
+  min-height: 253px;
+}
+
+.card_icon
+{
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 56px;
+  height: 56px;
+  background-color: var(--Light-Coral);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.card_icon:hover .card_dep
+{
+  display: block;
+}
+
+.card_hover
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 350px;
+  min-height: 253px;
+}
+
+.directors .card_dep
+{
+  position: absolute;
+  bottom: 0;
+  min-width: 350px;
+  min-height: 253px;
+  background-color: var(--Sacramento-State-Green);
+  padding: 30px 50px 0 50px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card_hover .card_name
+{
+  color: var(--Rapture-Blue);
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.card_dep--content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+
+.card_social
+{
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.card_icon:hover + .card_dep
+{
+  display: flex;
+}
+
+.card_icon img
+{
+  width: 16px !important;
+  height: 16px !important;
+  transition-duration: 0.3s;
+}
+
+.card_icon:hover
+{
+  background-color: var(--Rapture-Blue);
+}
+
+.card_icon:hover img
+{
+  transform: rotate(45deg);
+}
+
+.bg_img_about_02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%);
+}
+
+.bg_img_about_03 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

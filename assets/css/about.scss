@@ -1,0 +1,73 @@
+body
+{
+    background-image: url(../../About\ -\ Desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 2352px;
+
+}
+
+.about
+{
+    opacity: 0.3;
+    background-color: var(--Midnight-Green);
+    padding-top: 241px;
+    padding-bottom: 119px;
+    position: relative;
+}
+
+.about .container
+{
+    display: flex;
+}
+.about .container .left
+{
+    width: 380px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: var(--white);
+    
+}
+
+.about .container .right
+{
+    flex: 1;
+    color: var(--white);
+}
+.about_border_top
+{
+    width: 50px;
+    height: 4px;
+    background-color: var(--Light-Coral);
+    margin-bottom: 41px;
+}
+
+.bg_img_about_01
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%);
+}
+
+.directors
+{
+    opacity: 0.3;
+    background-color: var(--Deep-Jungle-Green);
+    margin-top: 100px;
+}
+
+@mixin h2
+{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.container .title
+{
+    @include h2;
+
+}
