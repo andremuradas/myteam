@@ -1,9 +1,4 @@
-body {
-  background-image: url(../../About\ -\ Desktop.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 2352px;
-}
+
 
 .about {
   background-color: var(--Midnight-Green);
@@ -45,10 +40,9 @@ body {
 
 .directors {
   position: relative;
-  opacity: 0.3;
   background-color: var(--Deep-Jungle-Green);
   padding-top: 140px;
-  padding-bottom: 94px;
+  padding-bottom: 93px;
 }
 
 .container .title 
@@ -225,4 +219,61 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+
+.clients
+{
+  position: relative;
+  background-color: var(--Sacramento-State-Green);
+  padding-top: 140px;
+  padding-bottom: 144px;
+}
+
+.clients_container
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.clients_container img:nth-child(1)
+{
+  width: 165px;
+  object-fit: contain;
+}
+
+.clients_container img:nth-child(2)
+{
+  width: 184px;
+  object-fit: contain;
+}
+
+.clients_container img:nth-child(3)
+{
+  width: 180px;
+  object-fit: contain;
+}
+
+.clients_container img:nth-child(4)
+{
+  width: 165px;
+  object-fit: contain;
+}
+
+.clients_container img:nth-child(5)
+{
+  width: 98px;
+  object-fit: contain;
+}
+
+.bg_img_about_04 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact_us .container .title 
+{
+  color: var(--Sacramento-State-Green);
 }

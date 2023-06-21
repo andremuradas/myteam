@@ -1,0 +1,119 @@
+body
+{
+    background-image: url(../../Contact\ -\ Active\ States.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+.contact
+{
+    opacity: 0.3;
+    background-color: var(--Midnight-Green);
+    padding-top: 240px;
+}
+
+
+.contact .container
+{
+    display: flex;
+}
+
+.contact .container .left
+{
+    width: 572px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.title
+{
+    color: var(--white);
+}
+
+.subtitle
+{
+    margin-top: 38px;
+    margin-bottom: 31px;
+    color: var(--Light-Coral);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.contact-desc
+{
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.icon
+{
+    width: 94px;
+}
+
+.desc
+{
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-weight: 700 !important;
+}
+
+.contact .container .right
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container .right input,
+.contact .container .right textarea
+{
+    width: 100%;
+}
+
+.contact .container .right input,
+.contact .container .right input:focus
+{
+    height: 42px;
+    margin-bottom: 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    outline-width: 0;
+}
+
+.contact .container .right input::placeholder
+{
+    opacity: 0.6;
+}
+
+.contact .container .right input
+{
+    padding-left: 14px;
+}
+
+.contact .container .right input::placeholder,
+.contact .container .right input
+{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.115px;
+}
+
+.contact .container .right input:hover::placeholder
+{
+
+    opacity: 1;
+}
+
+
+.contact .container .right input:focus,
+.contact .container .right input:hover
+{
+    border-bottom: 1px solid var(--Rapture-Blue);
+}

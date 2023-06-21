@@ -61,7 +61,7 @@
 
 .primary_btn_light
 {
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 24px;
     padding: 0px 30px 0px 30px;
     height: 48px;
@@ -70,9 +70,16 @@
     color: var(--white);
 }
 
+
+.primary_btn_light:hover
+{
+    background-color: var(--white);
+    color: var(--Dark-Green);
+}
+
 .primary_btn_dark
 {
-    border: 2px solid #012F34;
+    border: 2px solid var(--Sacramento-State-Green);
     border-radius: 24px;
     padding: 0px 30px 0px 30px;
     height: 48px;
@@ -81,3 +88,8 @@
     color: var(--Sacramento-State-Green);
 }
 
+.primary_btn_dark:hover
+{
+    color: var(--white);
+    background-color: var(--Sacramento-State-Green);
+}

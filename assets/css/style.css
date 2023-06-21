@@ -69,6 +69,12 @@ li a
     text-decoration: none;
 }
 
+li a:hover,
+.footer_menu a:hover
+{
+    color: var(--Light-Coral);
+}
+
 .logo
 {
     width: 240px;
@@ -396,4 +402,9 @@ footer .container .right
 footer .container .right a 
 {
     margin-left: 12px;
+}
+
+.social a:hover svg path
+{
+    fill: var(--Light-Coral);
 }
