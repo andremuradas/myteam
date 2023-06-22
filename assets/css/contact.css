@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(../../Contact\ -\ Active\ States.jpg);
+    background-image: url(../../Contact\ -\ Desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: top;
@@ -8,11 +8,25 @@ body
 
 .contact
 {
+    position: relative;
     opacity: 0.3;
     background-color: var(--Midnight-Green);
     padding-top: 240px;
+    padding-bottom: 118px;
 }
+.bg_img_contact_01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 245px);
+  }
 
+  .bg_img_contact_02 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 0);
+  }
 
 .contact .container
 {
@@ -85,18 +99,21 @@ body
     outline-width: 0;
 }
 
-.contact .container .right input::placeholder
+.contact .container .right input::placeholder,
+.contact .container .right textarea::placeholder
 {
     opacity: 0.6;
 }
 
-.contact .container .right input
+.contact .container .right input,
+.contact .container .right textarea
 {
     padding-left: 14px;
 }
 
 .contact .container .right input::placeholder,
-.contact .container .right input
+.contact .container .right input,
+.contact .container .right textarea::placeholder
 {
     color: var(--white);
     font-size: 15px;
@@ -105,7 +122,8 @@ body
     letter-spacing: -0.115px;
 }
 
-.contact .container .right input:hover::placeholder
+.contact .container .right input:hover::placeholder,
+.contact .container .right textarea:hover::placeholder
 {
 
     opacity: 1;
@@ -113,7 +131,38 @@ body
 
 
 .contact .container .right input:focus,
-.contact .container .right input:hover
+.contact .container .right input:hover,
+.contact .container .right textarea:focus,
+.contact .container .right textarea:hover
 {
     border-bottom: 1px solid var(--Rapture-Blue);
+}
+
+
+
+.contact .container .right textarea
+{
+    height: 85px;
+    margin-bottom: 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    outline-width: 0;
+    resize: none;
+    margin-bottom: 19px;
+}
+
+.contact .container .right textarea,
+.contact .container .right textarea::placeholder
+{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.115px;
+}
+
+button
+{
+    border: none;
 }

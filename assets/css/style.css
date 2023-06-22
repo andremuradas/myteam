@@ -408,3 +408,104 @@ footer .container .right a
 {
     fill: var(--Light-Coral);
 }
+
+@media (max-width: 768px)
+{
+    body
+    {
+        background-image: url(../../Home\ -\ Tablet.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 3080px;
+    }
+
+    section,
+    footer
+    {
+        width: 100%;
+    }
+
+    .container
+    {
+        max-width: 689px;
+    }
+
+
+    header
+    {
+        opacity: 0.3;
+    }
+
+    .menu_content
+    {
+        width: 689px;
+        margin-top: 64px;
+    }
+
+    .logo
+    {
+        width: 175px;
+    }
+    .logo img
+    {
+        width: 128px;
+    }
+
+    .find
+    {
+        opacity: 0.3;
+        height: auto;
+        display: block;
+        padding-top: 224px;
+        padding-bottom: 250px;
+    }
+
+    .bg_img_01
+    {
+        display: none;
+    }
+
+    .bg_img_02
+    {
+        transform: translate(-57%);
+    }
+
+    .find .container
+    {
+        flex-direction: column;
+    }
+
+    .find .left
+    {
+        justify-content: center;
+    }
+    .find .left .h1_large
+    {
+        font-size: 64px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .find_border_top
+    {
+        display: none;
+    }
+
+    .find .container .right
+    {
+        padding-left: 0;
+    }
+
+    .find .container .right span
+    {
+        width: 457px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 28px;
+        margin-top: 25px;
+    }
+
+    
+
+}
