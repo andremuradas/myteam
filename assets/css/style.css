@@ -420,6 +420,12 @@ footer .container .right a
         height: 3080px;
     }
 
+    .h2
+    {
+        font-size: 32px !important;
+        line-height: 32px !important;
+    }
+
     section,
     footer
     {
@@ -431,11 +437,6 @@ footer .container .right a
         max-width: 689px;
     }
 
-
-    header
-    {
-        opacity: 0.3;
-    }
 
     .menu_content
     {
@@ -454,7 +455,6 @@ footer .container .right a
 
     .find
     {
-        opacity: 0.3;
         height: auto;
         display: block;
         padding-top: 224px;
@@ -506,6 +506,141 @@ footer .container .right a
         margin-top: 25px;
     }
 
+
+    .build .container
+    {
+        flex-direction: column;
+        padding-left: 57px;
+        padding-right: 57px;
+        padding-top: 100px;
+        padding-bottom: 71px;
+    }
+
+    .build_border_top
+    {
+        margin-bottom: 31px;
+    }
+
+    .build .container .left
+    {
+        width: 100% !important;
+    }
     
+
+    .build .container .right
+    {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 65px;
+        padding-right: 5px;
+    }
+
+    .bg_img_03
+    {
+        top: 0;
+    }
+
+    .delivering
+    {
+        padding-bottom: 13px;
+    }
+
+    .delivering .container
+    {
+        padding-top: 100px;
+    }
+
+    .delivering--title
+    {
+        width: 490px;
+    }
+
+    .depoiments-container
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 84px;
+    }
+
+    .depoiment-card
+    {
+        width: 570px;
+        margin-bottom: 83px;
+    }
+
+    .depoiment
+    {
+        margin-bottom: 18px;
+    }
+
+    .dep--position
+    {
+        margin-bottom: 14px;
+    }
+
+
+    .contact_us .container 
+    {
+        padding: 77px 59px 75px 57px;
+        align-items: center;
+    }
+
+    .bg_img_07
+    {
+        bottom: -23px;
+    }
+
+    footer .container
+    {
+        margin-top: 56px;
+        flex-wrap: wrap;
+    }
+
+    .footer_logo img
+    {
+        width: 97px;
+    }
+
+    footer .container .left,
+    footer .container .center 
+    {
+        flex: 50%;
+    }
+
+    footer .container .center
+    {
+        text-align: right;
+    }
+
+    .menu_footer
+    {
+        font-size: 15px;
+        line-height: 25px;
+        margin-right: 24px;
+    }
+
+    .footer_menu
+    {
+        margin-bottom: 0;
+    }
+    
+    footer .container .right
+    {
+        margin-top: 35px;
+        flex-direction: row;
+    }
+
+    footer .container .right a:nth-child(1)
+    {
+        margin-left: 0;
+    }
+
+    .copy
+    {
+        opacity: 0.6;
+        text-align: right;
+        font-size: 15px;
+        line-height: 25px;
+    }
 
 }
