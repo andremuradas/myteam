@@ -89,6 +89,11 @@ li a:hover,
     align-items: center;
 }
 
+.menu_mobile
+{
+    display: none;
+}
+
 .find
 {
     position: relative;
@@ -411,15 +416,7 @@ footer .container .right a
 
 @media (max-width: 768px)
 {
-    body
-    {
-        background-image: url(../../Home\ -\ Tablet.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 3080px;
-    }
-
+    
     .h2
     {
         font-size: 32px !important;
@@ -641,6 +638,209 @@ footer .container .right a
         text-align: right;
         font-size: 15px;
         line-height: 25px;
+    }
+
+}
+
+@media (max-width: 767px)
+{
+    body
+    {
+        background-image: url(../../Home\ -\ Mobile.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 3784px;
+    }
+
+    section,
+    footer
+    {
+        width: 100%;
+    }
+
+    .container
+    {
+        max-width: 327px;
+    }
+
+    .menu_content
+    {
+        max-width: 327px;
+        margin-top: 48px;
+    }
+
+    .menu_content .menu,
+    .menu_content .contact_menu a
+    {
+        display: none;
+    }
+
+
+    .menu_content .contact_menu
+    {
+        display: flex;
+        align-items: center;
+    
+    }
+    .menu_mobile
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    .find
+    {
+        padding-top: 160px;
+        padding-bottom: 191px
+    }
+
+    .find .left .h1_large
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .find .container .right span
+    {
+        width: 330px;
+        margin-top: 19px;
+    }
+
+    .bg_img_01
+    {
+        display: none;
+    }
+
+    .bg_img_02
+    {
+        transform: translate(-2%);
+    }
+
+    .build .container
+    {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 64px;
+        padding-bottom: 16px;
+    }
+
+    .build_item
+    {
+        flex-direction: column;
+        margin-bottom: 49px;
+    }
+
+
+    .build_item--icon
+    {
+        margin: auto;
+    }
+
+    .build_item--description
+    {
+        padding-left: 0;
+    }
+
+    .build_item--description span
+    {
+        padding-top: 12px;
+        margin-bottom: 7px;
+    }
+
+    .build_item--description span,
+    .build_item--description p
+    {
+        text-align: center;
+    }
+
+    .build .container .right
+    {
+        padding-right: 0;
+        padding-top: 57px;
+    }
+    .delivering
+    {
+        padding-bottom: 77px
+    }
+
+    .delivering .container
+    {
+        padding-top: 137px;
+    }
+
+    .delivering--title,
+    .depoiment-card
+    {
+        width: auto;
+    }
+
+    .contact_us .container
+    {
+        flex-direction: column;
+        text-align: center;
+        padding: 83px 59px 82px 57px
+    }
+
+    .contact_us .title
+    {
+        margin-bottom: 24px;
+    }
+
+    footer
+    {
+        opacity: 0.3;
+    }
+
+    footer .container
+    {
+        flex-direction: column;
+        margin-top: 68px
+    }
+    
+    footer .container .left, 
+    footer .container .center,
+    footer .container .right
+    {
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .container .left
+    {
+        width: auto;
+    }
+
+    .footer_logo
+    {
+        margin-bottom: 18px;
+    }
+
+    .menu_footer:nth-last-child(1)
+    {
+        margin-right: 0;
+    }
+
+    
+    footer .container .center
+    {
+        margin-top: 24px;
+    }
+
+    footer .container .right
+    {
+        flex-direction: column;
+    }
+    footer .container .right .social
+    {
+        margin-top: 5px;
+    }
+
+    .copy
+    {
+        margin-top: 11px;
+        text-align: center;
+        letter-spacing: 0.3px;
     }
 
 }
