@@ -277,3 +277,121 @@
 {
   color: var(--Sacramento-State-Green);
 }
+
+@media (max-width: 768px)
+{
+
+  body
+  {
+    /* position: relative;
+    background-image: url(../../About\ -\ Tablet.jpg);
+    background-repeat: no-repeat;
+    height: 2554px; */
+  }
+
+  .about
+  {
+    padding-top: 202px;
+    padding-bottom: 111px;
+  }
+  .about .container
+  {
+    flex-direction: column;
+  }
+
+  .about .container .left
+  {
+    width: auto;
+    text-align: center;
+  }
+
+  .about .container .right
+  {
+    margin: auto;
+  }
+  .about .container .right p
+  {
+    width: 457px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 3px;
+  }
+
+  .about_border_top
+  {
+    display: none;
+  }
+
+  .directors
+  {
+    padding-top: 100px;
+    padding-bottom: 55px
+  }
+
+  .directors .container
+  {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .directors .cards_container
+  {
+    justify-content: center;
+    margin-top: 48px;
+    
+    width: 580px;
+
+  }
+
+  .directors .cards_container .card
+  {
+    min-width: 290px;
+  }
+
+  .clients
+  {
+    padding-top: 100px;
+    padding-bottom: 71px;
+  }
+
+  .bg_img_about_04
+  {
+    transform: translateY(-50%);
+  }
+
+  .clients_container
+  {
+    margin-top: 45px;
+  }
+
+  .clients_container img:nth-child(1)
+  {
+    width: 102px;
+  }
+
+  .clients_container img:nth-child(2)
+  {
+    width: 113px;
+  }
+
+  .clients_container img:nth-child(3)
+  {
+    width: 112px;
+  }
+
+  .clients_container img:nth-child(4)
+  {
+    width: 102px;
+  }
+
+  .clients_container img:nth-child(5)
+  {
+    width: 62px;
+  }
+}
