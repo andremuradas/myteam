@@ -395,3 +395,68 @@
     width: 62px;
   }
 }
+
+
+@media (max-width: 767px)
+{
+
+  body
+  {
+    position: relative;
+    background-image: url(../../About\ -\ Mobile.jpg);
+    background-repeat: no-repeat;
+    height: 3948px;
+  }
+
+  .about
+  {
+    opacity: 0.3;
+    padding-top: 160px;
+    padding-bottom: 106px;
+  }
+
+  .about .container .left
+  {
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .about .container .right p
+  {
+    width: auto;
+  }
+
+  .bg_img_about_01
+  {
+    transform: translate(50%, 50%);
+  }
+
+  .directors
+  {
+    opacity: 0.3;
+    padding-top: 88px;  
+    padding-bottom: 58px;
+  }
+
+  .bg_img_about_02
+  {
+    transform: translate(-50%, -50%);
+  }
+  .directors .cards_container
+  {
+    width: auto;
+  }
+
+  .directors .cards_container .card
+  {
+    margin-bottom: 53px;
+    min-width: 327px;
+    
+  }
+  
+
+}
