@@ -281,13 +281,13 @@
 @media (max-width: 768px)
 {
 
-  body
+  /* body
   {
-    /* position: relative;
+    position: relative;
     background-image: url(../../About\ -\ Tablet.jpg);
     background-repeat: no-repeat;
-    height: 2554px; */
-  }
+    height: 2554px;
+  } */
 
   .about
   {
@@ -400,13 +400,13 @@
 @media (max-width: 767px)
 {
 
-  body
+  /* body
   {
     position: relative;
     background-image: url(../../About\ -\ Mobile.jpg);
     background-repeat: no-repeat;
     height: 3948px;
-  }
+  } */
 
   .about
   {
@@ -459,7 +459,6 @@
 
   .clients
   {
-    opacity: 0.3;
     padding-top: 88px;
     padding-bottom: 37px;
   }

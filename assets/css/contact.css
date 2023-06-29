@@ -1,15 +1,14 @@
-body
+/* body
 {
     background-image: url(../../Contact\ -\ Desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: top;
-}
+} */
 
 .contact
 {
     position: relative;
-    opacity: 0.3;
     background-color: var(--Midnight-Green);
     padding-top: 240px;
     padding-bottom: 118px;
@@ -165,4 +164,78 @@ body
 button
 {
     border: none;
+}
+
+@media (max-width: 768px)
+{
+
+  body
+  {
+    position: relative;
+    background-image: url(../../Contact\ -\ Tablet.jpg);
+    background-repeat: no-repeat;
+    height: 1475px;
+  }
+
+  main,
+  header
+  {
+    opacity: 0.3;
+  }
+
+  .contact
+  {
+    padding-top: 200px;
+    padding-bottom: 110px;
+  }
+
+  .contact .container
+  {
+    flex-direction: column;
+  }
+
+  .title,
+  .subtitle
+  {
+    text-align: center;
+  }
+  .subtitle
+  {
+    margin-top: 25px;
+    margin-bottom: 22px;
+  }
+
+  .contact-desc
+  {
+    padding-left: 35px;
+  }
+  .icon
+  {
+    width: 90px;
+  }
+
+  .contact .container .right
+  {
+    width: 542px;
+    margin-top: 52px;
+  }
+
+  .contact .container .right input, 
+  .contact .container .right input:focus
+  {
+    height: 50px;
+    margin-bottom: 16px;
+  }
+
+  .contact .container .right textarea
+  {
+    height: 88px;
+    margin-top: 5px;
+  }
+
+  .bg_img_contact_01
+  {
+    transform: translate(-50%, 216px);
+  }
+
 }
