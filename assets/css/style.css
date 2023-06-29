@@ -645,12 +645,12 @@ footer .container .right a
 
 @media (max-width: 767px)
 {
-    body
+    /* body
     {
         position: relative;
         background-image: url(../../Menu\ -\ Mobile.jpg);
         background-repeat: no-repeat;
-    }
+    } */
     .menu_mobile
     {
         position: relative;

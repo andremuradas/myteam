@@ -169,19 +169,14 @@ button
 @media (max-width: 768px)
 {
 
-  body
+  /* body
   {
     position: relative;
     background-image: url(../../Contact\ -\ Tablet.jpg);
     background-repeat: no-repeat;
     height: 1475px;
-  }
+  } */
 
-  main,
-  header
-  {
-    opacity: 0.3;
-  }
 
   .contact
   {
@@ -237,5 +232,71 @@ button
   {
     transform: translate(-50%, 216px);
   }
+
+}
+
+@media (max-width: 767px)
+{
+
+    /* body
+    {
+        position: relative;
+        background-image: url(../../Contact\ -\ Mobile.jpg);
+        background-repeat: no-repeat;
+        height: 3948px;
+    } */
+
+
+
+    .bg_img_contact_01,
+    .bg_img_contact_02
+    {
+        display: none;
+    }
+
+    .contact
+    {
+        padding-top: 135px;
+        padding-bottom: 85px;
+    
+    }
+    .contact .container .left
+    {
+        width: auto;
+    }
+
+    .title
+    {
+        font-size: 40px !important;
+        line-height: 40px !important;
+    }
+    .subtitle
+    {
+        margin-top: 17px;
+        margin-bottom: 38px;
+    }
+    .contact-desc
+    {
+        padding-left: 0;
+        margin-bottom: 18px;
+    }
+
+    .icon
+    {
+        width: 95px;
+    }
+
+    .desc
+    {
+        flex: 1;
+    }
+
+    .contact .container .right
+    {
+        width: auto;
+        margin-top: 29px;
+    }
+
+    
 
 }
