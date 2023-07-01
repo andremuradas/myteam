@@ -103,16 +103,8 @@
 
 }
 
-.card_dep
-{
-  display: none;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 350px;
-  min-height: 253px;
-}
+
+
 
 .card_icon
 {
@@ -120,20 +112,32 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%) rotate(0deg);
   width: 56px;
   height: 56px;
   background-color: var(--Light-Coral);
   border-radius: 50%;
   display: grid;
   place-items: center;
-  cursor: pointer;
+  cursor: pointer;  
+  transition-duration: 0.3s;
 }
 
-.card_icon:hover .card_dep
+.card_icon::after
 {
-  display: block;
+  content: url(../images/icon-cross.svg);
+  transform: translate(-50%, -8px);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+
 }
+
+.card_icon:hover
+{
+  background-color: var(--Rapture-Blue) !important;
+}
+
 
 .card_hover
 {
@@ -152,10 +156,14 @@
   min-height: 253px;
   background-color: var(--Sacramento-State-Green);
   padding: 30px 50px 0 50px;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all ease 0.3s;
+  opacity: 0;
 }
+
+
 
 
 .card_hover .card_name
@@ -163,6 +171,7 @@
   color: var(--Rapture-Blue);
   margin-top: 7px;
   margin-bottom: 7px;
+  text-align: center;
 }
 
 .card_dep--content
@@ -185,28 +194,12 @@
 
 
 
-
-.card_icon:hover + .card_dep
-{
-  display: flex;
-}
-
 .card_icon img
 {
   width: 16px !important;
   height: 16px !important;
-  transition-duration: 0.3s;
 }
 
-.card_icon:hover
-{
-  background-color: var(--Rapture-Blue);
-}
-
-.card_icon:hover img
-{
-  transform: rotate(45deg);
-}
 
 .bg_img_about_02 {
   position: absolute;
@@ -410,7 +403,6 @@
 
   .about
   {
-    opacity: 0.3;
     padding-top: 160px;
     padding-bottom: 106px;
   }
