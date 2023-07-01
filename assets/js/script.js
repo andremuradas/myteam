@@ -16,18 +16,24 @@ let cardHover = document.querySelectorAll('.directors .card_dep')
 cardIcon.forEach(cardIconImg =>
 {
     cardIconImg.addEventListener('click',(e)=>{
-        console.log(e.target.nextElementSibling)
+        
         if(e.target.computedStyleMap().get('transform')[1].angle.value === 0)
         {
             e.target.style.transform = "translate(-50%, 50%) rotate(45deg)";
-            e.target.nextElementSibling.style.opacity = "1";
+
+            e.target.nextElementSibling.style.display = "flex";
+            setTimeout(() => {
+                e.target.nextElementSibling.style.opacity = "1";
+            }, 150);
         }
         else
         {
             e.target.style.transform = "translate(-50%, 50%) rotate(0deg)";
-            // e.target.nextElementSibling.style.display = "none";
-            
+
             e.target.nextElementSibling.style.opacity = "0";
+            setTimeout(() => {
+                e.target.nextElementSibling.style.display = "none";
+            }, 300);
         }
     });
     
