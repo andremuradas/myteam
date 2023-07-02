@@ -51,13 +51,17 @@ let validator = {
 
         let inputs = form.querySelectorAll('#formRules');
 
+        // validator.clearErrors();
+
         for(let i=0;i<inputs.length;i++){
             let input = inputs[i];
+            inputs[i].classList.remove('input_error');
             let check = validator.checkInput(input);
             
             if(check !== true){
                 send = false;
-                console.log(send);
+                validator.showError(input, check);
+                
             }
         }
 
@@ -86,7 +90,13 @@ let validator = {
         }
 
         return true;
-    }
+    },
+    showError:(input, error) => {
+        input.classList.add('input_error');
+    },
+    // clearErrors:() => {
+
+    // }
 
 
 };

@@ -161,6 +161,17 @@
     letter-spacing: -0.115px;
 }
 
+
+.input_error
+{
+    border-bottom: 1px solid var(--Light-Coral) !important;
+}
+
+.input_error::placeholder
+{
+    color: var(--Light-Coral) !important;
+}
+
 button
 {
     border: none;
