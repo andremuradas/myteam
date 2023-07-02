@@ -1,7 +1,7 @@
 let hamburgerBtn = document.querySelector('.menu_mobile_btn img');
 let menuMobile = document.querySelector('.menu_mobile');
 let closeBtn = document.querySelector('.menu_mobile img');
-let cross = document.querySelector('.card_icon img');
+
 hamburgerBtn.addEventListener('click',()=>{
     menuMobile.style.right = "0";
 });
@@ -10,6 +10,9 @@ closeBtn.addEventListener('click',()=>{
     menuMobile.style.right = "-100%";
 });
 
+//ABOUT PAGE
+
+let cross = document.querySelector('.card_icon img');
 let cardIcon = document.querySelectorAll('.card_icon');
 let cardHover = document.querySelectorAll('.directors .card_dep')
 
@@ -39,4 +42,55 @@ cardIcon.forEach(cardIconImg =>
     
 });
 
+//CONTACT PAGE
 
+let validator = {
+    handleSubmit:(event)=>{
+        event.preventDefault();
+        let send = true;
+
+        let inputs = form.querySelectorAll('#formRules');
+
+        for(let i=0;i<inputs.length;i++){
+            let input = inputs[i];
+            let check = validator.checkInput(input);
+            
+            if(check !== true){
+                send = false;
+                console.log(send);
+            }
+        }
+
+        if(send){
+            form.submit();
+        }
+
+    },
+    checkInput:(input) => {
+        let rules = input.getAttribute('data-rules');
+        if(rules !== null){
+            rules = rules.split('|');
+            for(let k in rules){
+                let rDetails = rules[k].split('=');
+                switch(rDetails[0]){
+                    case 'required':
+                        if(input.value == ''){
+                            return 'This field is required'
+                        }
+                    break;
+                    case 'min':
+
+                    break;
+                }
+            }
+        }
+
+        return true;
+    }
+
+
+};
+
+let form = document.querySelector('.validator');
+
+form.addEventListener('submit', validator.handleSubmit);

@@ -60,12 +60,12 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form action="">
-                        <input type="text" name="name" id="" placeholder="Name">
-                        <input type="email" name="email" id="" placeholder="Email Address">
-                        <input type="text" name="company" id="" placeholder="Company Name">
-                        <input type="text" name="title" id="" placeholder="Title">
-                        <textarea name="message" id="" placeholder="Message"></textarea>
+                    <form method="POST" action="contact.php" class="validator">
+                        <input type="text" name="name" id="formRules" placeholder="Name" data-rules="required">
+                        <input type="email" name="email" id="formRules" placeholder="Email Address" data-rules="required">
+                        <input type="text" name="company" id="formRules" placeholder="Company Name" data-rules="required">
+                        <input type="text" name="title" id="formRules" placeholder="Title" data-rules="required">
+                        <textarea name="message" id="formRules" placeholder="Message" data-rules="required"></textarea>
                         <button class="secondary_btn_light body1">submit</button>
                     </form>
                 </div>
