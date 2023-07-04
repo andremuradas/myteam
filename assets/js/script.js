@@ -56,6 +56,7 @@ let validator = {
         for(let i=0;i<inputs.length;i++){
             let input = inputs[i];
             inputs[i].classList.remove('input_error');
+            
             let check = validator.checkInput(input);
             
             if(check !== true){
