@@ -51,11 +51,14 @@ let validator = {
 
         let inputs = form.querySelectorAll('#formRules');
 
-        // validator.clearErrors();
+        
 
         for(let i=0;i<inputs.length;i++){
             let input = inputs[i];
+            //clean input styles
             inputs[i].classList.remove('input_error');
+            //clean error messages
+            inputs[i].nextElementSibling.innerHTML = '';
             
             let check = validator.checkInput(input);
             
@@ -67,7 +70,8 @@ let validator = {
         }
 
         if(send){
-            form.submit();
+            // form.submit();
+            alert("Enviado com sucesso!");
         }
 
     },
@@ -84,6 +88,23 @@ let validator = {
                         }
                     break;
                     case 'min':
+                        if(input.value.length < rDetails[1]){
+                            return 'This field require '+rDetails[1]+' characters minimum'
+                        }
+                    break;
+                    case 'email':
+                        if(input.value.indexOf(".") > input.value.indexOf("@")+1 == false){
+                            return 'This field require a valid email'
+                        }
+
+                        if(input.value.indexOf("@") == 0){
+                            return 'This field require a valid email'
+                        }
+
+                        if(input.value.indexOf(" ") > -1){
+                            return 'This field require a valid email'
+                        }
+
 
                     break;
                 }
@@ -94,10 +115,10 @@ let validator = {
     },
     showError:(input, error) => {
         input.classList.add('input_error');
+        let errorMessage = document.querySelector('.models .error_message').cloneNode(true);
+        errorMessage.innerHTML = error;
+        input.nextElementSibling.appendChild(errorMessage)
     },
-    // clearErrors:() => {
-
-    // }
 
 
 };

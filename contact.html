@@ -12,6 +12,9 @@
     <title>Myteam multi-page website</title>
 </head>
 <body>
+    <div class="models">
+        <div class="error_message"></div>
+    </div>
     <header>
         <div class="menu_container">
             <div class="menu_content">
@@ -61,11 +64,16 @@
                 </div>
                 <div class="right">
                     <form method="POST" action="contact.php" class="validator">
-                        <input type="text" name="name" id="formRules" placeholder="Name" data-rules="required">
-                        <input type="email" name="email" id="formRules" placeholder="Email Address" data-rules="required">
-                        <input type="text" name="company" id="formRules" placeholder="Company Name" data-rules="required">
-                        <input type="text" name="title" id="formRules" placeholder="Title" data-rules="required">
-                        <textarea name="message" id="formRules" placeholder="Message" data-rules="required"></textarea>
+                        <input type="text" name="name" id="formRules" placeholder="Name" data-rules="required|min=5">
+                        <div class="error_message--container"></div>
+                        <input type="text" name="email" id="formRules" placeholder="Email Address" data-rules="required|email">
+                        <div class="error_message--container"></div>
+                        <input type="text" name="company" id="formRules" placeholder="Company Name" data-rules="required|min=5">
+                        <div class="error_message--container"></div>
+                        <input type="text" name="title" id="formRules" placeholder="Title" data-rules="required|min=5">
+                        <div class="error_message--container"></div>
+                        <textarea name="message" id="formRules" placeholder="Message" data-rules="required|min=10"></textarea>
+                        <div class="error_message--container"></div>
                         <button class="secondary_btn_light body1">submit</button>
                     </form>
                 </div>

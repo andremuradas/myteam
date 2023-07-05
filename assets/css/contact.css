@@ -1,11 +1,15 @@
 /* body
 {
-    background-image: url(../../Contact\ -\ Desktop.jpg);
+    background-image: url(../../Contact\ -\ Active\ States.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: top;
 } */
 
+.models
+{
+    display: none;
+}
 .contact
 {
     position: relative;
@@ -172,21 +176,35 @@
     color: var(--Light-Coral) !important;
 }
 
+.error_message
+{
+    padding-left: 14px;
+    color: var(--Light-Coral);
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 13px;
+    margin-top: -13px;
+    margin-bottom: 15px;
+
+}
+
 button
 {
     border: none;
 }
 
+
 @media (max-width: 768px)
 {
 
-  /* body
+  body
   {
     position: relative;
-    background-image: url(../../Contact\ -\ Tablet.jpg);
+    background-image: url(../../Contact\ -\ Active\ States.jpg);
     background-repeat: no-repeat;
     height: 1475px;
-  } */
+  }
 
 
   .contact
@@ -198,6 +216,8 @@ button
   .contact .container
   {
     flex-direction: column;
+    align-items: center;
+    
   }
 
   .title,
