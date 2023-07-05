@@ -94,15 +94,15 @@ let validator = {
                     break;
                     case 'email':
                         if(input.value.indexOf(".") > input.value.indexOf("@")+1 == false){
-                            return 'This field require a valid email'
+                            return 'Please use a valid email address'
                         }
 
                         if(input.value.indexOf("@") == 0){
-                            return 'This field require a valid email'
+                            return 'Please use a valid email address'
                         }
 
                         if(input.value.indexOf(" ") > -1){
-                            return 'This field require a valid email'
+                            return 'Please use a valid email address'
                         }
 
 
